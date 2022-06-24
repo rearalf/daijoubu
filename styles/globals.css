@@ -1,16 +1,79 @@
-html,
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--color-primary-100: #fde0dc;
+	--color-primary-200: #fcbcba;
+	--color-primary-300: #f6969c;
+	--color-primary-400: #ee798d;
+	--color-primary-500: #e34f76;
+	--color-primary-600: #c3396b;
+	--color-primary-700: #a32760;
+	--color-primary-800: #831954;
+
+	/** background colors */
+	--background-color-primary: #f2f2f2;
+	--background-color-second: #eaeaea;
+
+	/** Text Color **/
+	--color-text-500: #323232;
+
+	--color-text-link: #e34f76;
+	--color-text-link-hover: #a32760;
+
+	/** Backgound Color **/
+	--color-back-primary: #f2f2f2;
+	/** Button Color **/
+	--color-btn-text: #e34f76;
+	--color-btn-bg: trasparent;
+	--color-btn-text-hover: #dc2354;
+
+	--color-btn-icon: #e34f76;
+	--color-btb-icon-hover: #a32760;
+	--background-btn-icon-hover: #fff;
+	/** Border and shadow **/
+	--border: 0.5px solid #6e6d7a40;
+	--border-primary: #bd1e48;
+	--border-secondary: #e34f76;
+	--box-shadow: 0 0 20px 10px #bfbfbf40;
+	--box-shadow-secondary: 0 0 15px 5px #a6a6a640;
+	--box-shadow-color: #6e6d7a40;
+	--border-radius: 5px;
+
+	/** inputs colors */
+	--input-border-color: #e34f76;
+	--input-border-color-hover: #a32760;
+}
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	color: var(--color-text-500);
+	background-color: #fff;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+@media (min-width: 640px) {
+	.scroll-x-styles::-webkit-scrollbar {
+		width: 8px;
+		height: 8px;
+	}
+	.scroll-x-styles::-webkit-scrollbar-thumb {
+		background: #f9a8d4;
+		border-radius: 8px;
+	}
+	.scroll-x-styles::-webkit-scrollbar-track {
+		background: transparent;
+	}
 }
-
-* {
-  box-sizing: border-box;
+@media (min-width: 1440px) {
+	.scroll-x-styles::-webkit-scrollbar {
+		width: 10px;
+		height: 10px;
+	}
+	.scroll-x-styles::-webkit-scrollbar-thumb {
+		background: #f9a8d4;
+		border-radius: 10px;
+	}
+	.scroll-x-styles::-webkit-scrollbar-track {
+		background: transparent;
+	}
 }
